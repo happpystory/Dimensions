@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="next.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+</head>
+<body>
+    
+
+    <div id="header">
+        <p>Have you ever wondered...</p>
+    </div>
+
+
+    <div id="main">
+
+        <div id="left-side">
+
+            <div id="number">
+                <div id="num-wrapper">
+                    <div class="up arrow"></div>
+                    <div id="figure">1</div>
+                    <div class="down arrow"></div>
+                </div>
+            </div>
+
+            <div id="item1" class="item">
+
+                <div class="search-container">
+
+                    <select id="search1">
+                        <option id="search1default" selected disabled hidden>Choose stuff</option>
+
+                        <optgroup label="Countries">
+                            <option class="firststuff">Japan</option>
+                            <option class="firststuff">United States</option>
+                            <option class="firststuff">South Korea</option>
+                            <option class="firststuff">Spain</option>
+                            <option class="firststuff">Norway</option>
+                            <option class="firststuff">Bulgaria</option>
+                            <option class="firststuff">New Zealand</option>
+                            <option class="firststuff">Ireland</option>
+                            <option class="firststuff">China</option>
+                            <option class="firststuff">Russia</option>
+                            <option class="firststuff">Brazil</option>
+                        </optgroup>
+
+                        <optgroup label="Continents">
+                            <option class="firststuff">North America</option>
+                            <option class="firststuff">South America</option>
+                            <option class="firststuff">Europe</option>
+                            <option class="firststuff">Africa</option>
+                            <option class="firststuff">Asia</option>
+                            <option class="firststuff">Antarctica</option>
+                            <option class="firststuff">Australia</option>
+                        </optgroup>
+
+                        <optgroup label="Big Stuff">
+                            <option class="firststuff">Car</option>
+                            <option class="firststuff">Stadium</option>
+                            <option class="firststuff">House</option>
+                        </optgroup>
+
+                        <optgroup label="Medium Stuff">
+                            <option class="firststuff">Television</option>
+                            <option class="firststuff">Refrigerator</option>
+                        </optgroup>
+
+                        <optgroup label="Small Stuff">
+                            <option class="firststuff">Basketball</option>
+                            <option class="firststuff">Volleyball</option>
+                            <option class="firststuff">Baseball</option>
+                            <option class="firststuff">Coin</option>
+                            <option class="firststuff">Napkin</option>
+                            <option class="firststuff">Cup</option>
+                            <option class="firststuff">Pencil</option>
+                            <option class="firststuff">Shoe</option>
+                            <option class="firststuff">Book</option>
+                        </optgroup>
+
+                        <optgroup label="Food">
+                            <option class="firststuff">Egg</option>
+                            <option class="firststuff">Grape</option>
+                            <option class="firststuff">Watermelon</option>
+                        </optgroup>
+
+                        <optgroup label="Animals">
+                            <option class="firststuff">Cat</option>
+                            <option class="firststuff">Elephant</option>
+                            <option class="firststuff">Ant</option>
+                            <option class="firststuff">Whale</option>
+                        </optgroup>
+
+                    </select>
+
+                </div>
+
+                <div id="pic1"></div>
+
+            </div>
+        </div>
+
+        
+        <div id="innertext">is how many</div>
+
+
+        <div id="right-side">
+
+            <div id="item2" class="item">
+
+                <div class="search-container">
+
+                    <select id="search2" disabled>
+                        <option id="search2default" selected disabled hidden>Choose stuff</option>
+
+                        <option id="nosmaller" disabled hidden>Nothing is smaller</option>
+
+                        <optgroup label="Countries" class="category" id="countries">
+                            <option class="stuff">Japan</option>
+                            <option class="stuff">United States</option>
+                            <option class="stuff">South Korea</option>
+                            <option class="stuff">Spain</option>
+                            <option class="stuff">Norway</option>
+                            <option class="stuff">Bulgaria</option>
+                            <option class="stuff">New Zealand</option>
+                            <option class="stuff">Ireland</option>
+                            <option class="stuff">China</option>
+                            <option class="stuff">Russia</option>
+                            <option class="stuff">Brazil</option>
+                        </optgroup>
+
+                        <optgroup label="Continents" class="category" id="continents">
+                            <option class="stuff">North America</option>
+                            <option class="stuff">South America</option>
+                            <option class="stuff">Europe</option>
+                            <option class="stuff">Africa</option>
+                            <option class="stuff">Asia</option>
+                            <option class="stuff">Antarctica</option>
+                            <option class="stuff">Australia</option>
+                        </optgroup>
+
+                        <optgroup label="Big Stuff" class="category" id="bigstuff">
+                            <option class="stuff">Car</option>
+                            <option class="stuff">Stadium</option>
+                            <option class="stuff">House</option>
+                        </optgroup>
+
+                        <optgroup label="Medium Stuff" class="category" id="mediumstuff">
+                            <option class="stuff">Television</option>
+                            <option class="stuff">Refrigerator</option>
+                        </optgroup>
+
+                        <optgroup label="Small Stuff" class="category" id="smallstuff">
+                            <option class="stuff">Basketball</option>
+                            <option class="stuff">Volleyball</option>
+                            <option class="stuff">Baseball</option>
+                            <option class="stuff">Coin</option>
+                            <option class="stuff">Napkin</option>
+                            <option class="stuff">Cup</option>
+                            <option class="stuff">Pencil</option>
+                            <option class="stuff">Shoe</option>
+                            <option class="stuff">Book</option>
+                        </optgroup>
+
+                        <optgroup label="Food" class="category" id="food">
+                            <option class="stuff">Egg</option>
+                            <option class="stuff">Grape</option>
+                            <option class="stuff">Watermelon</option>
+                        </optgroup>
+
+                        <optgroup label="Animals" class="category" id="animals">
+                            <option class="stuff">Cat</option>
+                            <option class="stuff">Elephant</option>
+                            <option class="stuff">Ant</option>
+                            <option class="stuff">Whale</option>
+                        </optgroup>
+
+                    </select>
+
+                </div>
+
+                <div id="pic2"></div>
+
+            </div>
+
+
+            <div id="question-holder">
+                <button id="question-mark">?</button>
+            </div>
+
+        </div>
+            
+    </div>
+
+
+
+    <div id="sumtext"><p><span id="index1">1</span> <span id="textitem1">Car</span> <span id="plural"></span> equal to <span id="lilover">≳</span><span id="index2"></span> <span id="textitem2"></span></p></div>
+
+
+    
+
+
+ <!-- scripts -->
+
+ <script src="next.js"></script>
+
+
+</body>
+
+</html>
